@@ -319,7 +319,7 @@ Contains the original `tickets.csv` data pasted directly, including the duplicat
 
 **Columns:** `ticket_id`, `month`, `team_id`, `channel`, `resolution_hours`, `satisfaction`
 
-![Raw Sheet](Raw.png)
+![Raw Sheet](Screenshots/Raw.png)
 
 ---
 
@@ -327,7 +327,7 @@ Contains the original `tickets.csv` data pasted directly, including the duplicat
 
 Contains the `teams.csv` data: team_id, team name, and department for all 4 teams (T1–T4).
 
-![Lookup Sheet](Lookup.png)
+![Lookup Sheet](Screenshots/Lookup.png)
 
 ---
 
@@ -339,7 +339,7 @@ The data cleaning and enrichment sheet. Starting from the Raw data, this sheet:
 - **Adds `breach_flag` column**: `=IF(E2>24, 1, 0)` — flags 1 if `resolution_hours > 24`, else 0
 - Displays `Before Row Count: 13` and `After Row Count: 12` as audit metrics
 
-![Clean Sheet](Clean.png)
+![Clean Sheet](Screenshots/Clean.png)
 
 ---
 
@@ -365,7 +365,7 @@ The analytical output sheet containing:
 **Grouped Bar Chart — Average Resolution Hours:**
 A dark-themed clustered bar chart comparing Service (blue) vs Technical (orange) average resolution hours across Jan, Feb, and Mar months.
 
-![Summary Sheet](Summary.png)
+![Summary Sheet](Screenshots/Summary.png)
 
 ---
 
